@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>colorbynumber.online</title>
+        <link rel="icon" type="image/png" href="images/main.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <style>
+            body,
+            button {
+                font-family: 'Montserrat', sans-serif;
+                max-width: 550px;
+                margin: auto;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            body {
+                box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+                padding: 25px;
+                border-radius: 30px;
+                font-size: medium;
+            }
+
+            a {
+                color: rgb(68, 130, 184);
+                font-weight: bold;
+            }
+
+            #description {
+                font-size: x-large;
+            }
+
+            #discord-button {
+                font-size: larger;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(255, 255, 255);
+                border: none;
+                background-color: #5865f2;
+                border-radius: 10px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            #discord-button p {
+                margin: 0px;
+            }
+
+            #site-link {
+                font-weight: bolder;
+                background: -webkit-linear-gradient(180deg, rgba(114, 197, 255, 1) 0%, rgba(252, 70, 107, 1) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <p id="description"><span id="site-link">colorbynumber.online</span> is coming soon...</p>
+        <p>
+            In the mean time, you can join our Discord sever if you would like to learn more about what's to come,
+            teasers, and alike.
+            <br /><br />
+            We will also be using the Discord server to collect user feedback, as well as hosting public test sessions.
+        </p>
+        <button type="button" id="discord-button">
+            <img src="images/discord-logo.svg" width="40px" height="40px" />
+            <p>&nbsp; Join our Discord</p>
+        </button>
+        <br />
+        <br />
+        <i>Looking for the testing link? It can be found at</i>
+        <a href="https://testing.colorbynumber.online">testing.colorbynumber.online</a>
+        <script>
+            window.addEventListener('load', function () {
+                document.getElementById('discord-button').addEventListener('click', function () {
+                    window.location.href = 'https://discord.gg/X7NyNZJn2j';
+                });
+            });
+        </script>
+    </body>
+</html>
